@@ -1,0 +1,24 @@
+#eureka:
+#  client:
+#    prefer-same-zone-eureka: true
+#    region: region-1
+#    service-url:
+#      zone1: http://localhost:8761/eureka/
+#      zone2: http://127.0.0.1:8762/eureka/
+#    availability-zones:
+#      region-1: zone1,zone2
+#
+#spring:
+#  application:
+#    name: gateway
+##  profiles:
+##    active: zone1
+#
+#zuul:
+#  routes:
+#    customers:
+#      path: /customer/**
+#      serviceId: customer-service
+#    creditcards:
+#      path: /creditcard/**
+#      serviceId: creditcard-service
